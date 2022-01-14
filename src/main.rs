@@ -15,7 +15,7 @@ fn main() {
     let mut buffer: Vec<u8> = vec![0; metadata.len() as usize];
     file.read_exact(&mut buffer).unwrap();
 
-    let offset_padding = format!("{}", buffer.len()).len();
+    let offset_padding = buffer.len().to_string().len();
 
     for offset in (0..buffer.len()).step_by(OFFSET_STEP) {
         // Print offset
