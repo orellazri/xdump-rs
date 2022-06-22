@@ -1,6 +1,6 @@
 # xdump-rs
 
-Toy hexdump utility made in Rust.
+Toy hexdump utility made in Rust
 
 ## Usage
 
